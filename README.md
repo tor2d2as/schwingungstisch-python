@@ -4,7 +4,7 @@ In dieser Projektarbeit wurde die Software für einen Schwingungstisch entwickel
 
 https://github.com/user-attachments/assets/6986a7ba-e4c2-4e37-9cde-6720ba19b400
 
-*Video: Animation des Schwingungstisches mit makroskopischen Schwingungstisch. Die Animation wurde mit <a href="https://www.blender.org/">Blender</a> erstellt.*
+*Video: Animation des Schwingungstisches mit makroskopischen Beschleunigungssensor. Die Animation wurde mit <a href="https://www.blender.org/">Blender</a> erstellt.*
 
 ## Kurzbeschreibung
 Der Schwingungstisch kann Objekte bis 5 kg auf ±1 g und leichtere Objekte auf ±1,5 g beschleunigen. Die Software steuert hierbei den Motor über eine PWM (Pulsweiten-Modulation) an und erlaubt das Anpassen der aktuellen maximalen Beschleunigung des Schwingungstisches, sowie der Anzeige von dieser. Damit die gewünschte Beschleunigung eingestellt werden kann, gibt es die Möglichkeit eine automatische Kalibrierung zu starten. Um die aktuelle Beschleunigung zu messen, wird ein kommerzieller Beschleunigungssensor (MPU6050) verwendet. Durch das Auswählen verschiedener Messeinstellungen des Beschleunigungssensors (Messbereich, Tiefpassfilter & Abtastrate einstellen) kann die Bedeutung der korrekten Messeinstellungen praktisch gezeigt werden. Dies funktioniert am Besten mit dem Oszilloskopausgang des Schwingungstisches der mit einem Digital-Analog-Wandler (MCP4921) realisiert wird. Abschließend kann der Tisch auch über eine Handy App per Bluetooth gesteuert werden. Zudem kann die Software mit Hilfe der Dateien im Ordner "Emulator" auch ohne vorhandene Hardware ausgeführt und weiterentwickelt werden.
