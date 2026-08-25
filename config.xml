@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<config><accel_meas_area>2</accel_meas_area><accel_low_pass>5</accel_low_pass><accel_sampling_rate>0</accel_sampling_rate><fit_oszi_out>True</fit_oszi_out></config>
