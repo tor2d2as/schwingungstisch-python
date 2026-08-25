@@ -1,11 +1,10 @@
 # Projektarbeit: Software für einen Schwingungstisch
 
-In dieser Projektarbeit wurde die Software für einen Schwingungstisch entwickelt. Parallel hat ein Teamkollege die Hardware davon aufgebaut. Zusammen mit einem makroskopischen Beschleunigungssensor aus einer vorangegangenen Projektarbeit kann damit z.B. am Campus Tag oder in Laborvorführungen demonstriert werden, wie ein Beschleunigungssensor funktioniert. Im folgenden Video ist das Endergebnis als Animation dargestellt. Danach wird kurz zusammengefasst was die Software kann und im Anschluss wird die GUI beschrieben. Im Anschluss wird die Funktion einiger Komponenten genauer erklärt: Ablauf der automatischen Kalibration und die Funktionsweise des Emulators. Der Ablauf der wichtigsten Prozesse der Software ist zudem als Sequenzdiagramm dargestellt. Abschließend ist die Pinbelegung am Raspberry Pi aufgelistet.
+In dieser Projektarbeit wurde die Software für einen Schwingungstisch entwickelt. Parallel hat ein Teamkollege die Hardware davon aufgebaut. Zusammen mit einem makroskopischen Beschleunigungssensor aus einer vorangegangenen Projektarbeit kann damit z.B. am Campus Tag oder in Laborvorführungen demonstriert werden, wie ein Beschleunigungssensor funktioniert. Im folgenden Video ist das Endergebnis als Animation dargestellt. Danach wird kurz zusammengefasst was die Software kann und im Anschluss wird die GUI beschrieben. Darauffolgend wird die Funktion einiger Komponenten genauer erklärt: Ablauf der automatischen Kalibration und die Funktionsweise des Emulators. Der Ablauf der wichtigsten Prozesse der Software ist zudem als Sequenzdiagramm dargestellt. Abschließend ist die Pinbelegung am Raspberry Pi aufgelistet.
 
+https://github.com/user-attachments/assets/6986a7ba-e4c2-4e37-9cde-6720ba19b400
 
-<video src="https://github.com/tor2d2as/schwingungstisch-python/raw/refs/heads/main/Dokumentation/Bilder_Doku/Demo_Video_Blender_Animation.mp4" controls width="700"></video>
-
-*Video: Animation des Schwingungstisches mit makroskopischen Schwingungstisch*
+*Video: Animation des Schwingungstisches mit makroskopischen Schwingungstisch. Die Animation wurde mit <a href="https://www.blender.org/">Blender</a> erstellt.*
 
 ## Kurzbeschreibung
 Der Schwingungstisch kann Objekte bis 5 kg auf ±1 g und leichtere Objekte auf ±1,5 g beschleunigen. Die Software steuert hierbei den Motor über eine PWM (Pulsweiten-Modulation) an und erlaubt das Anpassen der aktuellen maximalen Beschleunigung des Schwingungstisches, sowie der Anzeige von dieser. Damit die gewünschte Beschleunigung eingestellt werden kann, gibt es die Möglichkeit eine automatische Kalibrierung zu starten. Um die aktuelle Beschleunigung zu messen, wird ein kommerzieller Beschleunigungssensor (MPU6050) verwendet. Durch das Auswählen verschiedener Messeinstellungen des Beschleunigungssensors (Messbereich, Tiefpassfilter & Abtastrate einstellen) kann die Bedeutung der korrekten Messeinstellungen praktisch gezeigt werden. Dies funktioniert am Besten mit dem Oszilloskopausgang des Schwingungstisches der mit einem Digital-Analog-Wandler (MCP4921) realisiert wird. Abschließend kann der Tisch auch über eine Handy App per Bluetooth gesteuert werden. Zudem kann die Software mit Hilfe der Dateien im Ordner "Emulator" auch ohne vorhandene Hardware ausgeführt und weiterentwickelt werden.
@@ -108,7 +107,7 @@ Im Folgenden Sequenzdiagramm ist gezeigt, wie das Programm intern arbeitet. Hier
 
 ![Sequenzdiagramm zum Ablauf der Software](Dokumentation/Bilder_Doku/Sequenzdiagramm.png)
 
-*Abbildung: Sequenzdiagramm zum Ablauf der Software. Das UML-Diagramme wurde mit <a href="https://www.plantuml.com/">PlantUML</a> generiert.*
+*Abbildung: Sequenzdiagramm zum Ablauf der Software. Das Sequenzdiagramm wurde mit <a href="https://www.plantuml.com/">PlantUML</a> generiert.*
 
 
 ## Die Pinbelegung am Raspberry pi
